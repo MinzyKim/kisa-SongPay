@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>SongPay</h1>
+        
+
+        <!-- JQuery library file. requared all pages -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Template global script file. requared all pages -->
+<script src="js/instascan.min.js"> </script>
+<script src="js/global.script.js"></script>
+<script>
+
+    let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+    $.ajax({
+        url:'http://localhost:3000/withdraw',
+        type : 'POST',
+        headers : {
+            'ourtoken' : sessionStorage.getItem('jwtToken')
+        },
+        data : {
+            amount : "1000",
+            fin_use_num : "199159919057870971744807"
+        },
+        success:function(data){
+            if(data == 1){
+                alert('결제완료')
+            }
+            else {
+                alert(data);
+            }
+        }
+    });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>출금 테스트</h1>
+    <form>
+        <label for="profit">출금 금액을 선택하세요</label>
+        <select id="selectBox" name="profit">
+          <option value="1000">1,000</option>
+          <option value="2000">2,000</option>
+          <option value="3000">3,000</option>
+          <option value="4000">4,000</option>
+        </select>
+        <button id="submitBtn">제출</button>
+      </form>
+
+    <!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Template global script file. requared all pages -->
+    <script src="js/global.script.js"></script>
+    
+    <script>
+      $("#submitBtn").click(function(){
+        var profit = $("#selectBox option:selected").val();
+       
+        console.log(profit);
+        $.ajax({
+            url:'http://localhost:3000/withdraw',
+            type : 'POST',
+            data : {
+                profit : profit,
+            },
+            success:function(data){
+                if(data =='1'){
+                }
+                else{
+                    alert('fail.....');
+                }
+            }
+        })
+    })
+</script>
+      </body>
+      </html>
+      
