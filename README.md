@@ -26,7 +26,7 @@ KISA 핀테크 프로젝트 개발 과정 최우수상작
 
 ## 3. 시연 영상
 
-<video src="../Documents/%E1%84%89%E1%85%A9%E1%86%BC%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC.mp4"></video>
+<video src="README.assets/songPay.mp4"></video>
 
 
 
