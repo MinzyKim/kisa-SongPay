@@ -28,6 +28,10 @@ KISA 핀테크 프로젝트 개발 과정 최우수상작
 
 <video src="README.assets/songPay.mp4"></video>
 
+```
+./Readme.assets/songPay.mp4
+```
+
 
 
 ## 4. 비즈니스 모델
